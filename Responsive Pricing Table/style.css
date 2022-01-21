@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  background: #30336b;
+  display: flex;
+  align-items: center;
+}
+
+.pricing-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: min(1600px, 100%);
+  margin: auto;
+}
+
+.pricing-card {
+  background: #fff;
+  flex: 1;
+  margin: 20px 10px;
+  max-width: 360px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  color: #2d2d2d;
+}
+
+.pricing-card-header {
+  background: #0fbcf9;
+  display: inline-block;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 0 0 20px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.5s linear;
+}
+
+.pricing-card:hover .pricing-card-header {
+  box-shadow: 0 0 0 26em #0fbcf9;
+}
+
+.price {
+  font-size: 70px;
+  color: #0fbcf9;
+  margin: 40px 0;
+  transition: 0.2s linear;
+}
+
+.price sup,
+.price span {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.pricing-card:hover,
+.pricing-card:hover .price {
+  color: #fff;
+}
+
+.pricing-card li {
+  font-size: 16px;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+.order-btn {
+  display: inline-block;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  border: 2px solid #0fbcf9;
+  color: #0fbcf9;
+  text-transform: uppercase;
+  padding: 18px 40px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.3s linear;
+}
+
+.order-btn:hover {
+  background: #0fbcf9;
+  color: #fff;
+}
+
+@media screen and (max-width: 1100px) {
+  .pricing-card {
+    flex: 50%;
+  }
+}
