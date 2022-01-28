@@ -65,5 +65,6 @@ body {
 }
 
 .checkbox:checked + .page-content {
-  filter: brightness(20%);
+  background-color: #111;
+  color: #fff;
 }
