@@ -8,15 +8,31 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <button class="popup-btn">Popup</button>
-    </div>
+    <button class="popup-btn">Popup</button>
 
     <div class="modal-outside">
       <div class="modal-container">
         <h1>Hello ! I'm modal</h1>
-        <button>close</button>
+        <button class="close">close</button>
       </div>
     </div>
+
+    <script>
+      const popupButton = document.querySelector(".popup-btn");
+      const modal = document.querySelector(".modal-outside");
+      const closeButton = document.querySelector(".close");
+
+      popupButton.addEventListener("click", () => {
+        modal.classList.add("active");
+      });
+
+      closeButton.addEventListener("click", () => {
+        modal.classList.remove("active");
+      });
+
+      window.addEventListener("click", (e) => {
+        if (e.target === modal) modal.classList.remove("active");
+      });
+    </script>
   </body>
 </html>
