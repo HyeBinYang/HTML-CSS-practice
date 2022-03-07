@@ -11,8 +11,30 @@
     <div class="dropdown">
       <div class="dropdown-select">
         <span class="select">Selected item</span>
-        <strong>클릭</strong>
+        <strong class="icon">클릭</strong>
+      </div>
+      <div class="dropdown-list">
+        <div class="dropdown-list__item">Pepsi</div>
+        <div class="dropdown-list__item">Coca</div>
+        <div class="dropdown-list__item">Monster</div>
       </div>
     </div>
+
+    <script>
+      const dropdown = document.querySelector(".dropdown");
+      const icon = document.querySelector(".icon");
+
+      function toggleDropdownList() {
+        const dropdownList = document.querySelector(".dropdown-list");
+        const icon = document.querySelector(".icon");
+        const iconText = icon.innerHTML;
+
+        dropdownList.classList.toggle("active");
+
+        icon.innerHTML = iconText === "클릭" ? "닫기" : "클릭";
+      }
+
+      dropdown.addEventListener("click", toggleDropdownList);
+    </script>
   </body>
 </html>

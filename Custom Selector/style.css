@@ -20,10 +20,39 @@ body {
 
 .dropdown {
   width: 38rem;
+  position: relative;
 }
 
 .dropdown-select {
   background-color: #fff;
   padding: 1.5rem;
   border-radius: 4px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.dropdown-list {
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s linear, visibility 0.2s linear;
+}
+
+.dropdown-list.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-list__item {
+  padding: 1rem;
+  font-size: 1.4rem;
 }
