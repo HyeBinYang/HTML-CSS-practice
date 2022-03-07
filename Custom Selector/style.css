@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #8a57e9;
+  --secondary: #4c75e6;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, var(--primary), var(--secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown {
+  width: 38rem;
+}
+
+.dropdown-select {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 4px;
+}

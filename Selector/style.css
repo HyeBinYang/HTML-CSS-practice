@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -28,7 +33,7 @@ select::-ms-expand {
   height: 3em;
   line-height: 3;
   background: #5c6664;
-  /* overflow: hidden; */
+  overflow: hidden;
   border-radius: 0.25em;
 }
 
