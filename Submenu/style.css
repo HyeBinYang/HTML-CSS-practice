@@ -5,12 +5,13 @@
 }
 
 body {
-  height: 5000px;
+  height: 100vh;
 }
 
 .nav {
   position: fixed;
   width: 100%;
+  height: 90px;
   background-color: green;
   display: flex;
   align-items: center;
@@ -34,10 +35,15 @@ body {
 
 .nav__item {
   width: 100px;
-  padding: 30px 0;
+  padding: 20px 0;
   margin: 0px 20px;
   position: relative;
   text-align: center;
+  cursor: pointer;
+}
+
+.nav__item:hover {
+  background: rgb(0, 97, 0);
 }
 
 .nav__link {
@@ -48,7 +54,7 @@ body {
 .item__submenu {
   width: 180px;
   position: absolute;
-  top: 50px;
+  top: 60px;
   background-color: green;
   padding: 10px 20px 0 20px;
   list-style: none;
@@ -68,4 +74,13 @@ body {
 .submenu__link {
   color: #fff;
   text-decoration: none;
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://picsum.photos/1000/1000");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 90px;
 }
