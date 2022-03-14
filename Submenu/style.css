@@ -4,7 +4,13 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 5000px;
+}
+
 .nav {
+  position: fixed;
+  width: 100%;
   background-color: green;
   display: flex;
   align-items: center;
